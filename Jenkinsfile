@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/MayurG74Code/docker-devops-project.git'
-            }
-        }
-
         stage('Build Image') {
             steps {
                 sh 'docker build -t mayur-app .'
